@@ -48,7 +48,16 @@ function manipularCadenas() {
         let direccion = "Independencia";
         let numCasa = "1915";
         let mensaje = " la direccion es " + direccion + " su numero de casa es " + numCasa;
+        let longitud = mensaje.length;
         alert("Mensaje: " + mensaje +"\nLongitud: " + longitud +"\nPrimer Caracter: " + mensaje[0]);
 
 
+}
+
+
+
+function sumarIndices(){
+    let arreglo = [1,2,3,4,5,6,7];
+    let = resultado = arreglo[arreglo.length - 1] +arreglo[arreglo.length - 2]
+    alert("El resultado de la suma es: " + resultado)
 }
