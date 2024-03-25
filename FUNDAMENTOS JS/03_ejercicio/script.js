@@ -1,19 +1,18 @@
 function modificarMensaje() {
-    const mensajeInicial = ["Hola", "a", "todos", "los", "estudiantes", "de", "programación", "de", "4to", "C"];
-    const mensajeModificado = ["Somos", "nosotros", "todos", "los", "estudiantes", "de", "programación", "los", "mejores", "del mundo"];
+  const mensajeInicial = ["Hola", "a", "todos", "los", "estudiantes", "de", "programación", "de", "4to", "C"];
+  let valoresEliminados = [];
+  let valoresAgregados = ["Somos", "nosotros", "...", "los", "mejores", "del mundo"];
+  
+  // Modificar el mensaje inicial
+  valoresEliminados.push(mensajeInicial.shift()); // Elimina "Hola"
+  valoresEliminados.push(mensajeInicial.shift()); // Elimina "a"
+  mensajeInicial.pop(); // Elimina "C", pero no lo necesitamos en valoresEliminados según el objetivo final
+  mensajeInicial.unshift("Somos", "nosotros"); // Agrega al inicio
+  mensajeInicial.push("los", "mejores", "del mundo"); // Agrega al final
 
-    const valoresEliminados = mensajeInicial.splice(0, 1); // Elimina "Hola"
-    mensajeInicial.unshift("Somos"); // Agrega "Somos" al inicio
-    mensajeInicial.splice(7, 1, "los"); // Reemplaza "de" por "los"
-    mensajeInicial.splice(8, 0, "mejores"); // Agrega "mejores" después de "los"
-    
-    const valoresAgregados = mensajeModificado.pop(); // Elimina "del mundo"
-    mensajeInicial.push("del", "mundo"); // Agrega "del" y "mundo" al final
-
-    const resultadoFinal = `Arreglo inicial: ${mensajeInicial.join(" ")}\nArreglo final: ${mensajeModificado.join(" ")}\nValores eliminados: ${valoresEliminados}\nValores agregados: ${valoresAgregados}`;
-    alert(resultadoFinal);
+  // Mostrar resultados
+  alert(`Arreglo inicial: Hola, a, todos, los, estudiantes, de, programación, de, 4to, C\nArreglo final: ${mensajeInicial.join(", ")}\nValores eliminados: ${valoresEliminados.join(", ")}\nValores agregados: ${valoresAgregados.join(", ")}`);
 }
-
 
 function operandoMetodos() {
   let arreglo = [100, 16, 70, 60, 64, 777, 666, 102, 567];
@@ -60,8 +59,4 @@ function operandoMetodos() {
   // Mostrar el mensaje de alerta final
   alert(mensaje);
 }
-
-// Llamada a la función
-operandoMetodos();
-
 
