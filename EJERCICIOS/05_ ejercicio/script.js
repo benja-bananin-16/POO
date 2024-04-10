@@ -9,9 +9,8 @@ function determinarRangoPuntuacion() {
     } else if (numero <70) {
         resultado = `<h2>Necesitas Mejorar</h2>`;
     } else{
-        resultado= `ingrese un valor valido`;
+        resultado= `ingrese un valor valido`
     }
     document.getElementById('lista').innerHTML = resultado;
-
     
 }
