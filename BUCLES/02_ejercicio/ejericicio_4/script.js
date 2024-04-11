@@ -1,14 +1,16 @@
-function contarfor(){
-    let array = [];
-    let numero1 = parseInt(prompt("Por favor ingrese el numero 1: "));
-    let numero2 = parseInt(prompt("Por favor ingrese el numero 2: "));
-    let numero3 = parseInt(prompt("Por favor ingrese el numero 3: "));
-    let numero4 = parseInt(prompt("Por favor ingrese el numero 4: "));
-    let numero5 = parseInt(prompt("Por favor ingrese el numero 5: "));
-    
-    for (let i= 20; i >= 10; i--){
-        array.push(i);
+function contarfor() {
+    let numeros = [];
+    for (let i = 0; i < 5; i++) {
+        let numero = parseInt(prompt(`Por favor ingrese el número ${i + 1}: `));
+        numeros.push(numero);
     }
-    
-    document.getElementById('lista').innerHTML =`Numero mayor <br><h2>${array}</h2>`;
+
+    let mayor = numeros[0];
+    for (let i = 1; i < numeros.length; i++) {
+        if (numeros[i] > mayor) {
+            mayor = numeros[i];
+        }
+    }
+
+    document.getElementById('lista').innerHTML = `los numeros son: <h2>${numeros}</h2> El número mayor es: <h2>${mayor}</h2>`;
 }
