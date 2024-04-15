@@ -12,5 +12,5 @@ function contarfor() {
         }
     }
 
-    document.getElementById('lista').innerHTML = `los numeros son: <h2>${array}</h2> El número mayor es: <h2>${mayor}</h2>`;
+    document.getElementById('lista').innerHTML = `los numeros son: <h2>${array.join(" - ")}</h2> El número mayor es: <h2>${mayor}</h2>`;
 }
