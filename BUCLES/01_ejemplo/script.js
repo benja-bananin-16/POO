@@ -19,4 +19,4 @@ function contarFor(){
     
     document.getElementById('lista').innerHTML =`Números del 20 al 10 con For <br><h2>${array}</h2>`;
 }
-
+//sdaiui//
