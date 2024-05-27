@@ -1,9 +1,11 @@
-function contarfor(){
-    let cantidadPares = parseInt(prompt(`Por favor ingrese la cantidad de números pares:`));
-    let numeros = [];
-
-    for (let n = 2; numeros.length < cantidadPares; n += 2) 
-        numeros.push(n);
-
-    document.getElementById('lista').innerHTML = `La cantidad de pares de ${cantidadPares} son: <h2>${numeros}</h2>`;
-}
+function contarfor(arr){
+        var resultado= [];
+        for (var i=0; i <arr.lenght; i++) {
+            if (arr[i] > 0) {
+                resultado.push(arr[i]);
+            }
+        }
+        alert("Numeros Positivos: " + resultado.join(","));
+        filtrarNumerosPositivos([-1, 2, -3, 4, 5]);
+    
+    }
