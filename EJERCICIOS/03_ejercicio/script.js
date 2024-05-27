@@ -1,16 +1,10 @@
-function Login() {
-    let resultado = "";
-    let usuario = prompt("Por favor ingrese su usuario: ");
 
-    if (usuario === "usuario123") { 
-        let contraseña = prompt("Por favor ingrese su contraseña: ");
-        if (contraseña = "secreto") { 
-            resultado = `<h2>Acceso Concedido :D</h2>`;
-        } else {
-            resultado = `<h2>Acceso Denegado</h2>`;
-        }
-    } else {
-        resultado = `<h2>Acceso Denegado :(</h2>`;
+function invertirtexto() {
+    let caracteres = document.getElementById("inputText").value;
+    let caracteresInvertidos = [];
+    for (var i = caracteres.length - 1; i >= 0; i--) {
+        caracteresInvertidos.push(caracteres[i]);
     }
-    document.getElementById('lista').innerHTML = resultado;
+    let textoInvertido = caracteresInvertidos.join('');
+    document.getElementById("lista").innerHTML = textoInvertido;
 }
