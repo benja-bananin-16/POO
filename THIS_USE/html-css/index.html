@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Galería de Monumentos Chilenos</h1>
+    <div class="image-container">
+        <img src="pastita.jpg" alt="Imagen 1" onclick="changeImage(this)">
+        <button onclick="showDescription(this)">Descripción</button>
+        <p class="description">castigala toma toma</p>
+    </div>
+    <div class="image-container">
+        <img src="pastita.jpg" alt="Imagen 2" onclick="changeImage(this)">
+        <button onclick="showDescription(this)">Descripción</button>
+        <p class="description">la pasta está matona</p>
+    </div>
+
+    <h2>Lista de Tareas</h2>
+    <ul id="taskList">
+        <li class="task">
+            <span>Tarea 1</span>
+            <button onclick="completeTask(this)">Listo</button>
+        </li>
+        <li class="task">
+            <span>Tarea 2</span>
+            <button onclick="completeTask(this)">Listo</button>
+        </li>
+        <li class="task">
+            <span>Tarea 3</span>
+            <button onclick="completeTask(this)">Listo</button>
+        </li>
+    </ul>
+
+    <h2>Productos</h2>
+    <div class="product-card">
+        <h2>Producto 1</h2>
+        <p class="price">$1.500</p>
+        <button onclick="applyDiscount(this)">Aplicar descuento</button>
+    </div>
+    <div class="product-card">
+        <h2>Producto 2</h2>
+        <p class="price">$2.450</p>
+        <button onclick="applyDiscount(this)">Aplicar descuento</button>
+    </div>
+    <div class="product-card">
+        <h2>Producto 3</h2>
+        <p class="price">$2.850</p>
+        <button onclick="applyDiscount(this)">Aplicar descuento</button>
+    </div>
+    <div class="product-card">
+        <h2>Producto 4</h2>
+        <p class="price">$3.200</p>
+        <button onclick="applyDiscount(this)">Aplicar descuento</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
