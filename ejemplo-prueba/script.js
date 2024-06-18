@@ -1,15 +1,18 @@
-function modificarNegativos() {
-  var arregloOriginal = document.getElementById("arreglo1").value.split(",").map(Number);
-  var arregloModificado = arregloOriginal.map(function(num) {
-      return num < 0 ? 0 : num;
-  });
-  document.getElementById("resultado1").innerHTML = "<p>Arreglo original: " + arregloOriginal.join(", ") + "</p><p>Arreglo modificado: " + arregloModificado.join(", ") + "</p>";
+const dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+const temperaturas = [];  // Definimos la lista temperaturas
+
+for (let dia of dias) {
+    let temperatura = parseFloat(prompt(`Ingrese la temperatura del ${dia}: `));
+    temperaturas.push(temperatura);
 }
 
-function sumarElementos() {
-  var arreglo = document.getElementById("arreglo2").value.split(",").map(Number);
-  var suma = arreglo.reduce(function(a, b) {
-      return a + b;
-  }, 0);
-  document.getElementById("resultado2").innerHTML = "<p>Arreglo: " + arreglo.join(", ") + "</p><p>Suma de elementos: " + suma + "</p>";
-}
+const mayor = Math.max(...temperaturas);
+const menor = Math.min(...temperaturas);
+
+const dia_mayor = dias[temperaturas.indexOf(mayor)];
+const dia_menor = dias[temperaturas.indexOf(menor)];
+
+// Imprimimos los resultados
+console.log(`Temperaturas ingresadas: ${temperaturas}`);
+console.log(`Valor mayor: ${mayor.toFixed(2)}°C (el ${dia_mayor})`);
+console.log(`Valor menor: ${menor.toFixed(2)}°C (el ${dia_menor})`);
