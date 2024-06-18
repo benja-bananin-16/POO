@@ -1,0 +1,32 @@
+.corner-button {
+    position: absolute;
+    bottom: 9px;
+    right: 20px;
+    font-size: 20px;
+    padding: 20px 35px;
+    z-index: 1;
+  }
+
+  .text-bg-secondary {
+    position: relative; 
+    top: 800px; 
+  }
+
+  .ubicacion {
+    margin-bottom: 10px; 
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.boton-panico,
+.boton-alerta {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    margin: -10px 0; 
+}
