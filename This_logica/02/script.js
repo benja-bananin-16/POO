@@ -13,6 +13,6 @@ function addName(button) {
         nameInput.value = "";
         nameInput.focus();
     } else {
-        alert('Por favor, ingrese un nombre.');
+        alert('Por favor ingresa un nombre valido.');
     }
 }
