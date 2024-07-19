@@ -1,0 +1,27 @@
+.navbar {
+    margin-bottom: 20px;
+}
+
+.container {
+    padding: 15px;
+    background: #00000011;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.301);
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: calc(100% - 150px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ced4da;
+}
+ul {
+    padding: 15px;
+    background: #00000011;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.301);
+    border-radius: 15px;
+}
