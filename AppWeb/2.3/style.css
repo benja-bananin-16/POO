@@ -1,0 +1,132 @@
+Ir al contenido principal
+Google Classroom
+Classroom
+Desarrollo de App. Web
+4º C
+Inicio
+Calendar
+Cursos en los que te has inscrito
+Tareas pendientes
+D
+Diseño y adm. de Base de datos
+4º C
+I
+INACAP - TÉCNICAS DE DES. DE APP. INF. BÁSICAS
+4ºC
+P
+PTECH
+4ºC
+D
+Desarrollo de App. Web
+4º C
+4
+4° MEDIO C
+Profesor Jefe: Dany Hernández
+P
+P.O.O
+4º C
+T
+T.PROMACIÓN CLASE 02
+clase02
+T
+Tecnología 1ºmedios Proyecto App
+1ºmedios
+Clases archivadas
+Ajustes
+2.3 Uso de display Flex
+2.3 Uso de display Flex
+DANY HERNANDEZ GONZALEZ
+•
+9:45
+100 puntos
+Fecha de entrega: 23:59
+el modelo de caja flexible (Flexbox) en CSS para diseñar y alinear elementos web de manera eficiente y adaptable.
+
+Introducción a display: flex en CSS
+El modelo de caja flexible, conocido comúnmente como "Flexbox", es una herramienta de CSS que permite diseñar y distribuir elementos en una página web de manera eficiente, incluso cuando el tamaño de los elementos es desconocido o dinámico. Este sistema se centra en permitir la disposición de elementos en una dirección, ya sea en fila o en columna, con la capacidad de ajustar su tamaño y espacio automáticamente.
+
+Explicación de display: flex
+El valor display: flex se aplica a un contenedor para convertirlo en un contenedor flexible. Todos los elementos hijos de este contenedor se convierten en elementos flexibles, que pueden alinearse y distribuirse según las reglas definidas en el modelo Flexbox.
+
+Propiedades principales:
+
+Contenedor Flexible (flex container): El elemento al que se le aplica display: flex.
+Ítem Flexible (flex item): Los elementos hijos directos del contenedor flexible.
+Uso de display: flex
+Para utilizar Flexbox, primero debes definir un contenedor flexible. Dentro de este contenedor, puedes aplicar varias propiedades para controlar la alineación, dirección, tamaño y orden de los elementos hijos.
+
+Ejemplo Básico
+HTML: (Copiar código)
+
+<div class="flex-container">
+  <div class="flex-item">1</div>
+  <div class="flex-item">2</div>
+  <div class="flex-item">3</div>
+</div>
+
+CSS: (Copiar código)
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+}
+
+En este ejemplo, .flex-container es el contenedor flexible y .flex-item son los ítems flexibles.
+
+Ejercicio CSS:
+1.- Crear index.html y style.css, vincular y probar resultado.
+***Entregar Captura
+2.- Revisar archivos adjuntos y aplicar display flex en el lugar indicado.
+*** Debes además como desafío aplicar margin y padding en los elementos segun corresponda, no es necesario modificar tamaños.
+
+index.html
+HTML
+
+style.css
+Hoja de estilo
+Comentarios de la clase
+Tu trabajo
+Asignado
+No se pueden entregar trabajos después de la fecha de entrega
+Comentarios privados
+.container{
+    width: 950px;
+    background-color: silver;
+}
+.top-nav {
+    height: 150px;
+    background-color: green;
+
+}
+.side-nav {
+    height: 300px;
+    width: 200px;
+    background-color: blue;
+}
+.main {
+    height: 400px;
+    width: 700px;
+    background-color: red;
+    margin-left: 20px;
+}
+.sub-content {
+    height: 200px;
+    width: 210px;
+    background-color: yellow;
+}
+#advertisement {
+    height: 120px;
+    width: 660px;
+    background-color: purple;
+}
+.row {
+    /* Aplica aqui display flex */
+}
+style.css
+Mostrando style.css.

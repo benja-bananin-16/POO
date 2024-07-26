@@ -1,0 +1,32 @@
+
+  .container {
+    background-color: #D15B19;
+    padding: 80px;
+    width: 700px;
+
+    
+    
+  }
+body {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+  .content {
+    background-color: #9FCAE0;
+    padding: 90px;
+  }
+  
+  .border {
+    border: solid rgb(229, 166, 133) 80px;
+  }
+  
+  
+  .padding {
+    background-color: #459FC7;
+    padding: 80px;
+  }
+  
