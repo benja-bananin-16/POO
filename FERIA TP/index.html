@@ -4,78 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Más Información - Sedes para Eventos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #2c3e50;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #34495e;
-            color: #fff;
-            padding: 15px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-        }
-        footer {
-            background-color: #2c3e50;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
 
     <header>
+        <button id="theme-toggle">Cambiar Tema</button>
         <h1>Más Información</h1>
     </header>
 
     <nav>
-        <a href="index.html">Inicio</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="nosotros.html">Sobre Nosotros</a>
+        <div id="menu" class="hidden">
+            <a href="index.html">Inicio</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="nosotros.html">Sobre Nosotros</a>
+        </div>
     </nav>
 
     <section>
         <h2>¿Por qué elegirnos para tu próximo evento?</h2>
-        <p>Nuestra plataforma ofrece una amplia selección de sedes para eventos que se adaptan a cualquier tipo de celebración o reunión. Desde bodas y fiestas, hasta conferencias y eventos corporativos, nuestras sedes están ubicadas en diversas áreas urbanas, lo que facilita el acceso y contribuye al desarrollo sostenible de las ciudades.</p>
-
-        <h3>Beneficios de utilizar nuestra plataforma:</h3>
-        <ul>
-            <li><strong>Acceso a espacios únicos:</strong> Ofrecemos una variedad de sedes, desde históricos hasta modernos, que pueden hacer que tu evento sea memorable.</li>
-            <li><strong>Facilita la sostenibilidad urbana:</strong> Al aprovechar espacios ya existentes, ayudamos a reducir la necesidad de nuevas construcciones y promovemos un uso más eficiente del suelo.</li>
-            <li><strong>Reserva en línea:</strong> Nuestro sistema te permite explorar, comparar y reservar sedes de manera fácil y rápida, todo desde la comodidad de tu hogar.</li>
-            <li><strong>Apoyo a la economía local:</strong> Al arrendar sedes en diferentes partes de la ciudad, apoyas a negocios locales y contribuyes a la vitalidad de la comunidad.</li>
-        </ul>
-
-        <h3>Compromiso con la Sostenibilidad</h3>
-        <p>Estamos comprometidos con los Objetivos de Desarrollo Sostenible (ODS), en especial con el ODS 11, que busca hacer que las ciudades sean inclusivas, seguras, resilientes y sostenibles. Al promover la utilización de sedes existentes, contribuimos a una planificación urbana más eficiente y a la reducción de la huella de carbono.</p>
+        <img src="download.jpg" alt="Evento elegante en una sede única" style="width:100%; height:auto;">
+        <p>Nuestra plataforma ofrece una amplia selección de sedes para eventos...</p>
     </section>
+
+    <h2>Beneficios de utilizar nuestra plataforma:</h2>
+    <ul>
+        <section>
+            <h2>Acceso a Espacios Únicos</h2>
+            <img src="espaciounico.webp" alt="Salón histórico" style="width:100%; height:auto;">
+            <p>Ofrecemos una variedad de sedes, desde históricos hasta modernos, que pueden hacer que tu evento sea memorable.</p>
+        </section>
+
+        <section>
+            <h2>Sostenibilidad Urbana</h2>
+            <img src="urbano.jpg" alt="Espacio urbano reutilizado para eventos" style="width:100%; height:auto;">
+            <p>Al aprovechar espacios ya existentes, ayudamos a reducir la necesidad de nuevas construcciones y promovemos un uso más eficiente del suelo.</p>
+        </section>
+
+        <section>
+            <h2>Reserva en Línea</h2>
+            <img src="image.png" alt="Interfaz de usuario de reserva en línea" style="width:100%; height:auto;">
+            <p>Nuestro sistema te permite explorar, comparar y reservar sedes de manera fácil y rápida, todo desde la comodidad de tu hogar.</p>
+        </section>
+
+        <section>
+            <h2>Apoyo a la Economía Local</h2>
+            <img src="comunidad.jpg" alt="Comunidad local interactuando" style="width:100%; height:auto;">
+            <p>Al arrendar sedes en diferentes partes de la ciudad, apoyas a negocios locales y contribuyes a la vitalidad de la comunidad.</p>
+        </section>
+
+        <section>
+            <h2>Compromiso con la Sostenibilidad</h2>
+            <img src="ods10.png" alt="Icono de los Objetivos de Desarrollo Sostenible" style="width:100%; height:auto;">
+            <p>Estamos comprometidos con los Objetivos de Desarrollo Sostenible (ODS), en especial el ODS 10</p>
+        </section>
+    </ul>
 
     <footer>
         <p>&copy; 2024 Vate Vicente Huidobro. Todos los derechos reservados.</p>
     </footer>
 
+    <button id="back-to-top" style="display:none;">Volver al Inicio</button>
+
+
+    <script src="script.js"></script>
+    
 </body>
 </html>
