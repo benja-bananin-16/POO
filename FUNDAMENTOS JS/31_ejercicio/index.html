@@ -8,15 +8,31 @@
 </head>
 <body>
 
-<div class="like-container">
-    <p><strong>Some User</strong></p>
-    <p><span id="likes">3</span> like(s)</p>
-    <button class="like-button" id="like-btn">Like</button>
-    <p>Esto es un texto de ejemplo, puede decir lo que queramos</p>
-
-    <!-- Sticky note -->
+<div class="container"> <!-- Cambiado a la clase .container -->
+    <!-- Sticky note (ahora en el lateral derecho) -->
     <div class="sticky-note">
-        Each time we click the "Like" button it should increase the number of likes by "1"
+        Cada vez que hacemos clic en el botón "Me gusta", se debe aumentar el número de likes en "1".
+    </div>
+
+    <!-- Publicación 1 -->
+    <div class="like-container col-1"> <!-- Agregado col-1 -->
+        <p><strong>User 1</strong></p>
+        <p><span id="likes-0">3</span> like(s)</p>
+        <button class="like-button" data-id="0">Like</button>
+    </div>
+
+    <!-- Publicación 2 -->
+    <div class="like-container col-1"> <!-- Agregado col-1 -->
+        <p><strong>User 2</strong></p>
+        <p><span id="likes-1">5</span> like(s)</p>
+        <button class="like-button" data-id="1">Like </button>
+    </div>
+
+    <!-- Publicación 3 -->
+    <div class="like-container col-1"> <!-- Agregado col-1 -->
+        <p><strong>User 3</strong></p>
+        <p><span id="likes-2">7</span> like(s)</p>
+        <button class="like-button" data-id="2">Like</button>
     </div>
 </div>
 

@@ -1,73 +1,76 @@
-/* General container styling */
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra el contenedor en la pantalla */
+    align-items: center; /* Centra el contenedor en la pantalla */
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    background-color: #f4f4f4; /* Fondo claro para contraste */
 }
 
-/* Main container for the like section */
-.like-container {
-    background-color: white;
-    padding: 20px;
-    width: 400px;
-    border: 2px solid #000;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
+.container {
+    outline: auto;
+    width: 500px; /* Ancho del contenedor */
+    margin: 20px;
+    padding-inline: 20px; /* Espaciado horizontal */
+    padding-block: 10px; /* Espaciado vertical */
+    position: relative; /* Necesario para el posicionamiento absoluto de la nota */
 }
 
-/* Styling for the username and like count */
-.like-container p:first-child {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.col-1 {
+    display: flex; /* Flexbox para alineación horizontal */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    background-color: white; /* Fondo blanco para las publicaciones */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espaciado entre publicaciones */
+    border: 2px solid #000; /* Borde negro */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
-#likes {
-    font-weight: bold;
+/* Botones */
+button {
+    width: 100px; /* Ancho fijo para los botones */
+    height: 50px; /* Alto fijo para los botones */
+    background-color: #FFD966; /* Color de fondo */
+    border: black solid 4px; /* Borde sólido */
+    box-shadow: 4px 4px #000; /* Sombra para los botones */
+    font-weight: bold; /* Negrita */
+    font-size: 20px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor de puntero */
 }
 
-/* Like button styling */
-.like-button {
-    background-color: #ffeb3b;
-    border: 2px solid #000;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
+p {
+    font-size: 23px; /* Tamaño de fuente para los párrafos */
 }
 
-.like-button:hover {
-    background-color: #fdd835;
-}
-
-/* Sticky note style for the reminder */
+/* Estilo para la nota adhesiva */
 .sticky-note {
-    background-color: #ffeb3b;
-    color: #000;
-    padding: 10px;
-    width: 200px;
-    font-size: 14px;
-    position: absolute;
-    top: 0;
-    left: 420px; /* Adjust the position to the right of the like container */
-    transform: rotate(-5deg);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    border: 2px solid #000;
+    background-color: #ffeb3b; /* Color de fondo de la nota */
+    color: #000; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    width: 220px; /* Ancho de la nota */
+    font-size: 13px; /* Tamaño de la fuente */
+    position: absolute; /* Posición absoluta para colocarla en el lateral */
+    top: 0; /* Alineación superior */
+    right: -250px; /* Desplazamiento a la derecha */
+    transform: rotate(-5deg); /* Rotación de la nota */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra de la nota */
+    border: 2px solid #000; /* Borde negro para la nota */
 }
 
 .sticky-note::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 50px;
-    width: 50px;
-    height: 10px;
-    background-color: red;
-    border-radius: 2px;
-    transform: rotate(20deg);
+    content: ""; /* Contenido vacío para el pseudo-elemento */
+    position: absolute; /* Posicionamiento absoluto para el pseudo-elemento */
+    top: -10px; /* Desplazamiento superior */
+    left: 50px; /* Desplazamiento a la izquierda */
+    width: 50px; /* Ancho del pseudo-elemento */
+    height: 10px; /* Alto del pseudo-elemento */
+    background-color: red; /* Color de fondo rojo */
+    border-radius: 2px; /* Bordes redondeados */
+    transform: rotate(20deg); /* Rotación del pseudo-elemento */
 }

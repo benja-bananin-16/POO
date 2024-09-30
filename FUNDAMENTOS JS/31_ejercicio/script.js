@@ -1,10 +1,19 @@
-// Seleccionar el número de likes y el botón
-const likeBtn = document.querySelector('#like-btn');
-const likesCount = document.querySelector('#likes');
+// Inicializar el arreglo de likes para cada publicación
+let likes = [3, 5, 7];  // Likes iniciales para las tres publicaciones
 
-// Manejar el evento onclick
-likeBtn.onclick = function() {
-    // Incrementar el número de likes
-    let currentLikes = parseInt(likesCount.textContent);
-    likesCount.textContent = currentLikes + 1;
-}
+// Seleccionar todos los botones de like
+const likeButtons = document.querySelectorAll('.like-button');
+
+// Añadir evento onclick a cada botón
+likeButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        // Obtener el ID del botón de like desde el atributo "data-id"
+        const id = button.getAttribute('data-id');
+        
+        // Incrementar los likes en el arreglo
+        likes[id]++;
+        
+        // Actualizar el contador de likes en el DOM
+        document.querySelector(`#likes-${id}`).textContent = likes[id];
+    });
+});
