@@ -1,39 +1,62 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #f3f3f3;
+    background-color: #ffffff; /* Mejor contraste */
     font-family: 'Montserrat', sans-serif;
+    color: #111; /* Texto más oscuro */
+    line-height: 1.6;
+    font-size: 18px; /* Tamaño base accesible */
 }
 
+/* HEADER */
 .top {
-    background-color: #333;
-    height: 75px;
-    border-top: 5px solid rebeccapurple;
-    color: #fff;
+    background-color: #1a1a1a; /* Más contraste */
+    height: 80px;
+    border-top: 6px solid #5a2ca0; /* Ajuste de color */
+    color: #ffffff;
 }
 
+/* INPUT */
 .search {
-    padding: 5px 10px;
-    font-size: 1.2rem;
+    padding: 10px;
+    font-size: 1.1rem;
     width: 100%;
-    margin: 0 100px;
+    margin: 0 50px;
+    border: 2px solid #333;
+    border-radius: 6px;
 }
 
+/* FOCUS accesible */
+.search:focus,
+.btn:focus {
+    outline: 3px solid #ffbf47; /* Amarillo accesible */
+    outline-offset: 2px;
+}
+
+/* BOTÓN */
 .btn {
-    background-color: rebeccapurple;
-    color: #fff;
-    width: 120px;
-    height: 40px;
+    background-color: #5a2ca0; /* Mejor contraste que rebeccapurple */
+    color: #ffffff;
+    width: 140px;
+    height: 45px;
     border: 2px solid #000;
-    box-shadow: 4px 4px #000;
+    box-shadow: 3px 3px #000;
     font-size: 1rem;
     cursor: pointer;
+    font-weight: bold;
 }
 
-.nav-container, .flex-container {
+.btn:hover {
+    background-color: #472080;
+}
+
+/* CONTENEDORES */
+.nav-container,
+.flex-container {
     width: 1080px;
     margin: 0 auto;
     display: flex;
@@ -46,10 +69,11 @@ body {
 }
 
 .flex-container {
-    padding: 20px;
-    background-color: #fff;
+    padding: 25px;
+    background-color: #ffffff;
 }
 
+/* COLUMNAS */
 .col-l {
     flex: 2;
 }
@@ -59,6 +83,7 @@ body {
     margin-left: 20px;
 }
 
+/* IMÁGENES */
 .placeholder {
     margin-bottom: 20px;
     width: 100%;
@@ -68,12 +93,14 @@ body {
     border-radius: 10px;
 }
 
+/* FILAS */
 .row {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
 
+/* USUARIO */
 .user {
     margin: 20px 0;
     display: flex;
@@ -82,32 +109,36 @@ body {
 
 .start h1 {
     margin-bottom: 10px;
+    font-size: 2rem;
 }
 
 .start h3 {
-    color: #333;
+    color: #222; /* Mejor contraste */
     font-weight: 400;
 }
 
+/* AVATAR */
 .avatar-s {
     height: 64px;
 }
 
+/* NOMBRE */
 .user-name {
     margin-left: 10px;
-    color: rebeccapurple;
+    color: #3b1d70; /* Más oscuro que rebeccapurple */
     font-size: 1.2rem;
     font-weight: 900;
-    font-size: 1.2rem;
 }
 
+/* SUBTÍTULO */
 .sub-header {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 900;
     padding-bottom: 10px;
-    border-bottom: 2px solid #999;
+    border-bottom: 3px solid #666;
 }
 
+/* VIDEOS */
 .video-small {
     display: flex;
     align-items: center;
@@ -122,10 +153,12 @@ body {
 .video-title {
     font-size: 1.2rem;
     font-weight: 900;
+    color: #111;
 }
+
 .video {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    background-color: #868e96;
+    background-color: #555; /* Mejor contraste */
 }

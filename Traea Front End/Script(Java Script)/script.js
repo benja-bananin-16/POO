@@ -36,3 +36,14 @@ function playVideo(secondaryContainer) {
     // Reproduce el video principal después del intercambio
     mainVideo.play();
 }
+function toggleSubscribe() {
+    var btn = document.getElementById("subscribeBtn");
+
+    if (btn.textContent === "Subscribe") {
+        btn.textContent = "Subscribed";
+        btn.style.backgroundColor = "#666"; // color distinto
+    } else {
+        btn.textContent = "Subscribe";
+        btn.style.backgroundColor = "rebeccapurple";
+    }
+}
